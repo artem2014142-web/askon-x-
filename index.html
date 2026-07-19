@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askon X — Читы для Minecraft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        body {
+            background: #0b0e14;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: #1a1f26;
+            border-radius: 28px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+            border: 1px solid #2d3540;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00d4ff, #7b2ffc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+        .sub {
+            color: #8b95a9;
+            margin-top: 6px;
+            font-size: 1rem;
+            border-left: 3px solid #7b2ffc;
+            padding-left: 14px;
+        }
+        .prices {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0 20px;
+            flex-wrap: wrap;
+        }
+        .price-card {
+            flex: 1;
+            min-width: 130px;
+            background: #252c36;
+            border-radius: 18px;
+            padding: 18px 14px;
+            text-align: center;
+            border: 1px solid #323b48;
+        }
+        .price-card .period {
+            font-size: 0.9rem;
+            color: #aab3c5;
+        }
+        .price-card .amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 8px 0 4px;
+        }
+        .price-card .amount small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #8b95a9;
+        }
+        .badge {
+            display: inline-block;
+            background: #2d3540;
+            border-radius: 40px;
+            padding: 4px 14px;
+            font-size: 0.75rem;
+            color: #bcc6d8;
+        }
+        .pay-icons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 18px 0 28px;
+        }
+        .pay-icons span {
+            background: #252c36;
+            padding: 8px 18px;
+            border-radius: 40px;
+            border: 1px solid #323b48;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .pay-icons span::before {
+            content: "💳";
+            font-size: 1.1rem;
+        }
+        .pay-icons span:last-child::before {
+            content: "📱";
+        }
+        .form-group {
+            margin: 18px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            color: #bcc6d8;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 14px;
+            border: 1px solid #323b48;
+            background: #11171f;
+            color: #fff;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+        .form-group input:focus {
+            border-color: #7b2ffc;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(123,47,252,0.25);
+        }
+        .btn {
+            width: 100%;
+            background: linear-gradient(135deg, #7b2ffc, #00d4ff);
+            border: none;
+            padding: 16px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #fff;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            margin-top: 12px;
+        }
+        .btn:hover {
+            opacity: 0.85;
+        }
+        .footer {
+            margin-top: 28px;
+            font-size: 0.8rem;
+            color: #5d6a7a;
+            text-align: center;
+            border-top: 1px solid #252c36;
+            padding-top: 22px;
+        }
+        .footer a {
+            color: #8b95a9;
+            text-decoration: none;
+        }
+        .hidden {
+            display: none;
+        }
+        #keyDisplay {
+            background: #0f141c;
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 24px;
+            border: 1px solid #2d3540;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #00d4ff;
+            word-break: break-all;
+        }
+        .notice {
+            font-size: 0.85rem;
+            color: #8b95a9;
+            margin-top: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Askon X</h1>
+        <div class="sub">Minecraft Client — KillAura, XRay, Fly, ESP, FreeCam и 13+ модулей</div>
+
+        <div class="prices">
+            <div class="price-card">
+                <div class="period">1 месяц</div>
+                <div class="amount">90 ₽</div>
+                <span class="badge">попробуй</span>
+            </div>
+            <div class="price-card" style="border-color: #7b2ffc;">
+                <div class="period">12 месяцев</div>
+                <div class="amount">380 ₽</div>
+                <span class="badge" style="background:#7b2ffc33; color:#b08cff;">выгода</span>
+            </div>
+        </div>
+
+        <div class="pay-icons">
+            <span>МИР</span>
+            <span>СБП</span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Ваша почта (для отправки ключа)</label>
+            <input type="email" id="email" placeholder="example@mail.ru" value="test@mail.ru">
+        </div>
+
+        <button class="btn" id="buyBtn">💳 Купить ключ</button>
+
+        <div id="keyDisplay" class="hidden">
+            ✅ Ваш ключ: <span id="keyValue">ASKON-X-7F9K2M</span>
+        </div>
+
+        <div class="notice">
+            После оплаты ключ придёт на почту в течение 2 минут.<br>
+            Поддержка в Telegram: <a href="#" style="color:#7b2ffc;">@askon_support</a>
+        </div>
+
+        <div class="footer">
+            <a href="#">Политика конфиденциальности</a> • <a href="#">Техподдержка</a>
+        </div>
+    </div>
+
+    <script>
+        const buyBtn = document.getElementById('buyBtn');
+        const keyDisplay = document.getElementById('keyDisplay');
+        const keyValue = document.getElementById('keyValue');
+
+        // Генерация ключа
+        function generateKey() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let key = 'ASKON-X-';
+            for (let i = 0; i < 8; i++) {
+                key += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return key;
+        }
+
+        buyBtn.addEventListener('click', function() {
+            const email = document.getElementById('email').value.trim();
+            if (!email || !email.includes('@')) {
+                alert('Введите корректную почту.');
+                return;
+            }
+
+            // Имитация оплаты и генерации ключа
+            const newKey = generateKey();
+            keyValue.textContent = newKey;
+            keyDisplay.classList.remove('hidden');
+
+            // Отправка на почту (имитация)
+            console.log(`Ключ ${newKey} отправлен на ${email}`);
+
+            // Можно дополнительно показать сообщение
+            buyBtn.textContent = '✅ Ключ сгенерирован!';
+            setTimeout(() => {
+                buyBtn.textContent = '💳 Купить ещё один';
+            }, 3000);
+        });
+    </script добавил сайт
+</body>
+</html>
